@@ -16,7 +16,7 @@ module.exports = {
       },
       {
         name: "Upcoming Gigs",
-        link: "/navigation",
+        link: "/upcoming-gigs",
       },
       {
         name: "Contact",
