@@ -1,9 +1,10 @@
 module.exports = {
   pathPrefix: "/gatsby-profile-website-clubclassic",
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Club Classic`,
+    description: `Personal profile website of Club Classic, a band that showcase a selection of funky songs to vibe to.`,
+    author: `@WesternWilson`,
+    linkedIn: `https://www.linkedin.com/in/western-wilson/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
