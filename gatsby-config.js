@@ -5,6 +5,24 @@ module.exports = {
     description: `Personal profile website of Club Classic, a band that showcase a selection of funky songs to vibe to.`,
     author: `@WesternWilson`,
     linkedIn: `https://www.linkedin.com/in/western-wilson/`,
+    menuLinks: [
+      {
+        name: "Home",
+        link: "/",
+      },
+      {
+        name: "About",
+        link: "/about",
+      },
+      {
+        name: "Upcoming Gigs",
+        link: "/navigation",
+      },
+      {
+        name: "Contact",
+        link: "/contact",
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -23,8 +41,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#000000`,
+        theme_color: `#000000`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
