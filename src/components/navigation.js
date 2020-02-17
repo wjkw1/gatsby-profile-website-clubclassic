@@ -27,7 +27,7 @@ const Navigation = () => {
         }}
       >
         <nav>
-          <ul style={{ display: "flex", flex: 1 }}>
+          <ul style={{ display: "flex", flex: "auto" }}>
             {data.site.siteMetadata.menuLinks.map(link => (
               <li
                 key={link.name}
@@ -36,7 +36,7 @@ const Navigation = () => {
                   padding: `1rem`,
                 }}
               >
-                <Link style={{ color: `black` }} to={link.link}>
+                <Link style={{ color: `white` }} to={link.link}>
                   {link.name}
                 </Link>
               </li>
