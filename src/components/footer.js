@@ -32,6 +32,14 @@ const Footer = ({ siteTitle, menuLinks }) => {
             ))}
           </ul>
         </nav>
+        <nav>
+          <ul style={{ color: `white` }}>
+            <li>Spotify</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+          </ul>
+        </nav>
         <p style={{ color: `white` }} id="footer">
           © {new Date().getFullYear()} All rights reserved
         </p>
