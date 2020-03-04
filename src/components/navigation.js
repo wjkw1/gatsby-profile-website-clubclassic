@@ -1,22 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 
-import { useStaticQuery, graphql } from "gatsby"
-
-const Navigation = () => {
-  const data = useStaticQuery(graphql`
-    query SiteNavigationQuery {
-      site {
-        siteMetadata {
-          title
-          menuLinks {
-            name
-            link
-          }
-        }
-      }
-    }
-  `)
+const Navigation = ({ menuLinks }) => {
   return (
     <>
       <div
@@ -28,7 +13,7 @@ const Navigation = () => {
       >
         <nav>
           <ul style={{ display: "flex", flex: "auto" }}>
-            {data.site.siteMetadata.menuLinks.map(link => (
+            {menuLinks.map(link => (
               <li
                 key={link.name}
                 style={{
