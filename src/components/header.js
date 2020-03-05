@@ -33,7 +33,15 @@ const Header = ({ siteTitle, menuLinks }) => {
           </Link>
         </h1>
       </div>
-      <Navigation menuLinks={menuLinks} />
+      <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `1.45rem 1.0875rem`,
+        }}
+      >
+        <Navigation menuLinks={menuLinks} />
+      </div>
     </header>
   )
 }
