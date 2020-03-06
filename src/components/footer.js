@@ -3,31 +3,20 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import Socials from "./socials"
+import styles from "../styles/footer.module.css"
 
 const Footer = ({ siteTitle, menuLinks }) => {
   return (
-    <footer
-      style={{
-        background: `#000000`,
-        marginBottom: `1.45rem`,
-        display: "flex",
-        flex: "0 0 auto",
-      }}
-    >
-      <div id="footer">
-        <h1 style={{ color: `white` }}>{siteTitle}</h1>
-        <nav>
-          <ul style={{ color: `white` }}>
+    <footer className={styles.footer}>
+      <div>
+        <h1 className={styles.header}>{siteTitle}</h1>
+      </div>
+      <div className={styles.content}>
+        <nav className={styles.navigation}>
+          <ul>
             {menuLinks.map(link => (
-              <li
-                key={link.name}
-                style={{
-                  color: `white`,
-                  listStyleType: `none`,
-                  padding: `0.15rem`,
-                }}
-              >
-                <Link style={{ color: `white` }} to={link.link}>
+              <li key={link.name}>
+                <Link className={styles.menulinks} to={link.link}>
                   {link.name}
                 </Link>
               </li>
@@ -35,8 +24,8 @@ const Footer = ({ siteTitle, menuLinks }) => {
           </ul>
         </nav>
         <Socials />
-        <p style={{ color: `white` }} id="footer">
-          © {new Date().getFullYear()} All rights reserved
+        <p className={styles.copyright}>
+          © {new Date().getFullYear()}. All rights reserved
         </p>
       </div>
     </footer>
