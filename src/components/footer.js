@@ -8,25 +8,29 @@ import styles from "../styles/footer.module.css"
 const Footer = ({ siteTitle, menuLinks }) => {
   return (
     <footer className={styles.footer}>
-      <div>
-        <h1 className={styles.header}>{siteTitle}</h1>
+      <div className>
+        <h1 className={styles.logo}>{siteTitle}</h1>
       </div>
-      <div className={styles.content}>
-        <nav className={styles.navigation}>
+      <div className={styles.container}>
+        <nav className={styles.box}>
           <ul>
             {menuLinks.map(link => (
               <li key={link.name}>
-                <Link className={styles.menulinks} to={link.link}>
+                <Link className={styles.leftMenu} to={link.link}>
                   {link.name}
                 </Link>
               </li>
             ))}
           </ul>
         </nav>
-        <Socials />
-        <p className={styles.copyright}>
-          © {new Date().getFullYear()}. All rights reserved
-        </p>
+        <div className={styles.box}>
+          <Socials />
+        </div>
+        <div className={styles.box}>
+          <p className={styles.copyright}>
+            © {new Date().getFullYear()}. All rights reserved
+          </p>
+        </div>
       </div>
     </footer>
   )
