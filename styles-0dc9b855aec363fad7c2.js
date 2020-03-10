@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{RwA0:function(o,e,t){o.exports={footer:"footer-module--footer--2mted",logo:"footer-module--logo--1e2yM",container:"footer-module--container--dxwdc",box:"footer-module--box--7nxF1",leftMenu:"footer-module--leftMenu--3Mn1w",socials:"footer-module--socials--3yRBq",copyright:"footer-module--copyright--39XOI"}},wmEu:function(o,e,t){}}]);
+//# sourceMappingURL=styles-0dc9b855aec363fad7c2.js.map
