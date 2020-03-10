@@ -11,6 +11,7 @@ const Footer = ({ siteTitle, menuLinks }) => {
       <div className>
         <h1 className={styles.logo}>{siteTitle}</h1>
       </div>
+      <hr />
       <div className={styles.container}>
         <nav className={styles.box}>
           <ul>
