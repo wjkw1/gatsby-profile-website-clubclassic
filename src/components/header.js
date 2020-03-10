@@ -4,7 +4,7 @@ import React from "react"
 
 import Navigation from "../components/navigation"
 
-const Header = ({ siteTitle }) => {
+const Header = ({ siteTitle, menuLinks }) => {
   return (
     <header
       style={{
@@ -33,17 +33,27 @@ const Header = ({ siteTitle }) => {
           </Link>
         </h1>
       </div>
-      <Navigation />
+      <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `1.45rem 1.0875rem`,
+        }}
+      >
+        <Navigation menuLinks={menuLinks} />
+      </div>
     </header>
   )
 }
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  menuLinks: PropTypes.array,
 }
 
 Header.defaultProps = {
   siteTitle: ``,
+  menuLinks: [],
 }
 
 export default Header

@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Footer element styling */
+.footer {
+  background: #000000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* The header logo element */
+.logo {
+  margin: 10px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+/* Horizontal line styling */
+.footer > hr {
+  margin: 1.45rem;
+  color: #e92efb;
+  background-color: #e92efb;
+  height: 5;
+}
+
+/* Over-arching container of the lower footer content */
+.container {
+  display: flex;
+  align-items: flex-end;
+}
+/* box refers to the items within the container */
+.box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.box:first-child {
+  margin-right: auto;
+}
+.box:last-child {
+  margin-left: auto;
+}
+/* Removing the list styling of Socials and MenuLinks and */
+.box > ul {
+  list-style-type: none;
+  color: white;
+}
+.leftMenu {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+
+/* represents the socials item under our container */
+.socials {
+  align-self: center;
+  display: flex;
+  color: white;
+}
+.socials > li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.copyright {
+  display: flex;
+  color: white;
+  margin-right: 25px;
+}
