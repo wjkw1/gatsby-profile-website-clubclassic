@@ -14,10 +14,10 @@ const Footer = ({ siteTitle, menuLinks }) => {
       <hr />
       <div className={styles.container}>
         <nav className={styles.box}>
-          <ul>
-            {menuLinks.map(link => (
+          <ul className={styles.leftMenu}>
+            {menuLinks.map((link, index) => (
               <li key={link.name}>
-                <Link className={styles.leftMenu} to={link.link}>
+                <Link className={styles.link} to={link.link}>
                   {link.name}
                 </Link>
               </li>
